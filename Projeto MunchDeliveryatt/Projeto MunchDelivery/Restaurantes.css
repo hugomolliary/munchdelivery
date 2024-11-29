@@ -1,0 +1,164 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url(assets/background.jpg);
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #e63946;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover nos links de navegação */
+nav ul li a:hover {
+    background-color: #e63946;
+    border-radius: 5px;
+    transform: translateY(-3px); /* Levanta o link ao passar o mouse */
+}
+
+/* Efeito da linha animada abaixo do link (adicionando a linha animada nos links) */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+/* Animação da linha quando o link é hover */
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Estilo da seção do restaurante */
+.restaurant-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Estilo dos itens do menu */
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre os itens do menu */
+.menu-item:hover {
+    transform: translateY(-5px); /* Eleva o card do item do menu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Mais destaque */
+}
+
+.menu-item img {
+    max-width: 150px;
+    margin-right: 20px;
+    transition: transform 0.3s ease; /* Efeito de transição na imagem */
+}
+
+/* Efeito na imagem ao passar o mouse */
+.menu-item:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.item-details .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover nos botões de itens do menu */
+.item-details .btn:hover {
+    background-color: #020202;
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #e63946;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 40px;
+}
