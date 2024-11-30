@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MunchDelivery</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function irParaRestaurantes() {
+            window.location.href = "Restaurantes.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">MunchDelivery</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Restaurantes.html">Restaurantes</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="cadastro.html">Criar Conta</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Bem-vindo ao MunchDelivery</h1>
+            <p>Entregamos seu pedido de forma rápida e segura, na porta da sua casa!</p>
+            <div class="cta-buttons">
+                <button onclick="irParaRestaurantes()">Explorar Restaurantes</button>
+                <button onclick="window.location.href='cadastro.html'">Criar Conta</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Explore nossas categorias</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="imagens/lanche.png" alt="Fast Food">
+                <p>Fast Food</p>
+            </div>
+            <div class="category-item">
+                <img src="imagens/sushi.png" alt="Sushi">
+                <p>Sushi</p>
+            </div>
+            <div class="category-item">
+                <img src="imagens/pizza.png" alt="Pizza">
+                <p>Pizza</p>
+            </div>
+            <div class="category-item">
+                <img src="imagens/sobremesas.png" alt="Sobremesas">
+                <p>Sobremesas</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MunchDelivery</p>
+    </footer>
+</body>
+</html>
+
+
